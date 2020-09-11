@@ -4,7 +4,7 @@ description = "Highly-optimized, pure-python HTTP server"
 name = "cheroot"
 optional = false
 python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,>=2.7"
-version = "8.3.0"
+version = "8.4.5"
 
 [package.dependencies]
 "jaraco.functools" = "*"
@@ -12,8 +12,8 @@ more-itertools = ">=2.6"
 six = ">=1.11.0"
 
 [package.extras]
-docs = ["sphinx (>=1.8.2)", "jaraco.packaging (>=3.2)", "sphinx-tabs (>=1.1.0)", "docutils", "alabaster", "python-dateutil", "sphinxcontrib-spelling (>=4.3.0)"]
-testing = ["pytest (>=4.6.6)", "pytest-mock (>=1.11.0)", "pytest-sugar (>=0.9.1)", "pytest-testmon (<1.0.0)", "pytest-watch (4.2.0)", "pytest-xdist (>=1.28.0)", "jaraco.text (>=3.1)", "coverage (4.5.3)", "codecov (2.0.15)", "pytest-cov (2.7.1)", "trustme (>=0.4.0)", "pyopenssl", "requests-unixsocket", "urllib3 (>=1.25)", "urllib3 (<1.25)", "colorama (!=0.4.2)"]
+docs = ["sphinx (>=1.8.2)", "jaraco.packaging (>=3.2)", "sphinx-tabs (>=1.1.0)", "docutils", "alabaster", "python-dateutil", "sphinxcontrib-spelling (>=5.2.0)"]
+testing = ["pytest (>=4.6.6)", "pytest-mock (>=1.11.0)", "pytest-sugar (>=0.9.3)", "pytest-testmon (<1.0.0)", "pytest-watch (4.2.0)", "pytest-xdist (>=1.28.0)", "jaraco.text (>=3.1)", "codecov (2.0.22)", "trustme (>=0.4.0)", "pyopenssl", "requests-unixsocket", "portend", "requests-toolbelt", "jaraco.context", "coverage (5.1)", "pytest-cov (2.10.1)", "urllib3 (>=1.25)", "futures", "coverage (<5)", "pytest-cov (2.8.1)", "urllib3 (<1.25)", "colorama (!=0.4.2)", "pytest-forked (>=1.2.0)", "pytest-forked (>=1.1.3)"]
 
 [[package]]
 category = "main"
@@ -109,7 +109,7 @@ description = "More routines for operating on iterables, beyond itertools"
 name = "more-itertools"
 optional = false
 python-versions = ">=3.5"
-version = "8.4.0"
+version = "8.5.0"
 
 [[package]]
 category = "main"
@@ -157,7 +157,7 @@ description = "Objects and routines pertaining to date and time (tempora)"
 name = "tempora"
 optional = false
 python-versions = ">=3.6"
-version = "3.0.0"
+version = "4.0.0"
 
 [package.dependencies]
 "jaraco.functools" = ">=1.20"
@@ -165,7 +165,7 @@ pytz = "*"
 
 [package.extras]
 docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
-testing = ["pytest (>=3.5,<3.7.3 || >3.7.3)", "pytest-checkdocs (>=1.2.3)", "pytest-flake8", "pytest-black-multipy", "pytest-cov", "backports.unittest-mock", "freezegun", "pytest-freezegun"]
+testing = ["pytest (>=3.5,<3.7.3 || >3.7.3)", "pytest-checkdocs (>=1.2.3)", "pytest-flake8", "pytest-black (>=0.3.7)", "pytest-cov", "pytest-mypy", "backports.unittest-mock", "freezegun", "pytest-freezegun"]
 
 [[package]]
 category = "main"
@@ -187,8 +187,8 @@ python-versions = "^3.8"
 
 [metadata.files]
 cheroot = [
-    {file = "cheroot-8.3.0-py2.py3-none-any.whl", hash = "sha256:2b48c88959b5b80a79aca627ae5212acb398becaa70b576b8b89bec1ad0d1367"},
-    {file = "cheroot-8.3.0.tar.gz", hash = "sha256:a0577e1f28661727d472671a7cc4e0c12ea0cbc5220265e70f00a8b8cb628931"},
+    {file = "cheroot-8.4.5-py2.py3-none-any.whl", hash = "sha256:ab342666c8e565a55cd2baf2648be9b379269a89d47e60862a087cff9d8b33ce"},
+    {file = "cheroot-8.4.5.tar.gz", hash = "sha256:b6c18caf5f79cdae668c35fc8309fc88ea4a964cce9e2ca8504fab13bcf57301"},
 ]
 cherrypy = [
     {file = "CherryPy-18.6.0-py2.py3-none-any.whl", hash = "sha256:c0a7283f02a384c112a0a18404fd3abd849fc7fd4bec19378067150a2573d2e4"},
@@ -211,8 +211,8 @@ cherrypy = [
     {file = "jaraco.text-3.2.0.tar.gz", hash = "sha256:e5078b1126cc0f166c7859aa75103a56c0d0f39ebcafc21695615472e0f810ec"},
 ]
 more-itertools = [
-    {file = "more-itertools-8.4.0.tar.gz", hash = "sha256:68c70cc7167bdf5c7c9d8f6954a7837089c6a36bf565383919bb595efb8a17e5"},
-    {file = "more_itertools-8.4.0-py3-none-any.whl", hash = "sha256:b78134b2063dd214000685165d81c154522c3ee0a1c0d4d113c80361c234c5a2"},
+    {file = "more-itertools-8.5.0.tar.gz", hash = "sha256:6f83822ae94818eae2612063a5101a7311e68ae8002005b5e05f03fd74a86a20"},
+    {file = "more_itertools-8.5.0-py3-none-any.whl", hash = "sha256:9b30f12df9393f0d28af9210ff8efe48d10c94f73e5daf886f10c4b0b0b4f03c"},
 ]
 portend = [
     {file = "portend-2.6-py2.py3-none-any.whl", hash = "sha256:62dd00b94a6a55fbf0320365fbdeba37f0d1fe14d613841037dc4780bedfda8f"},
@@ -241,8 +241,8 @@ six = [
     {file = "six-1.15.0.tar.gz", hash = "sha256:30639c035cdb23534cd4aa2dd52c3bf48f06e5f4a941509c8bafd8ce11080259"},
 ]
 tempora = [
-    {file = "tempora-3.0.0-py2.py3-none-any.whl", hash = "sha256:70503a3a10fb341f49e7919d193f0b6362bbfddffb560fac47df3e977414c0c6"},
-    {file = "tempora-3.0.0.tar.gz", hash = "sha256:e370d822cf48f5356aab0734ea45807250f5120e291c76712a1d766b49ae34f8"},
+    {file = "tempora-4.0.0-py3-none-any.whl", hash = "sha256:9f46de767be7dd21d9602a8a5b0978fd55abc70af3e2a7814c85c00d7a8fffa3"},
+    {file = "tempora-4.0.0.tar.gz", hash = "sha256:599a3a910b377f2b544c7b221582ecf4cb049b017c994b37f2b1a9ed1099716e"},
 ]
 "zc.lockfile" = [
     {file = "zc.lockfile-2.0-py2.py3-none-any.whl", hash = "sha256:cc33599b549f0c8a248cb72f3bf32d77712de1ff7ee8814312eb6456b42c015f"},
