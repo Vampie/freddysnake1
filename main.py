@@ -78,7 +78,7 @@ class Battlesnake(object):
 
         print("Board: %(height)s, %(width)s." % data["board"])
         print("Me: %(x)s, %(y)s." % data["you"]["head"])
-        print("GOING: left:{goingLEFT}, right:{goingRIGHT}, up:{goingUP}, down:{goingDOWN}")
+        print(f"GOING: left:{goingLEFT}, right:{goingRIGHT}, up:{goingUP}, down:{goingDOWN}")
         
 
         if init==1:
